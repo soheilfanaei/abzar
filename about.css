@@ -1,0 +1,19 @@
+body{
+    background-color: beige;
+}
+#ad1{
+    background-color: blueviolet;
+    text-align: center;
+    font-size: x-large;
+}
+#ad2{
+
+    background-color: rgb(226, 43, 43);
+    text-align: center;
+    font-size: x-large;
+}
+#ad3{
+    background-color: rgba(191, 115, 28, 0.84);
+    text-align: center;
+    font-size: x-large;
+}
