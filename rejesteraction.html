@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="rejesteraction.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+        <img src="c:\Users\PASARGAD\Pictures\Screenshots\Screenshot 2024-11-15 232812.png" alt="">
+    <title>فرم ثبت‌نام قرعه کشی</title>
+<body>
+    <header>
+        <p id="title1">فروشگاه ابزار الات کشاورزی</p>
+    </header>
+    <header1>
+        <nav>
+            <ul>
+                <li class="item_menu">درباره ی ما
+                <li class="item_menu">سبد خرید</li>
+                <li class="item_menu">ثبت نام قرغه کشی</li>
+            </ul>
+        
+        </nav>
+    </header1>
+    <main>
+        <aside>
+         <p class="sb">منو</p>
+         <p class="sb">تیلر</p>
+     
+     </aside>
+     <section>
+    
+        <div class="form-container">
+            <h2>فرم ثبت‌نام قرعه کشی</h2>
+            <form id="signupForm">
+                <label for="username">نام کاربری:</label>
+                <input 
+                    type="text" 
+                    id="username" 
+                    name="username" 
+                    maxlength="10" 
+                    placeholder="حداکثر 10 کاراکتر">
+                <p class="error-message" id="error-message"></p>
+                <button type="button" class="register-button" onclick="validateInput()">ثبت‌نام</button>
+            </form>
+        </div>
+    
+        <script>
+            function validateInput() {
+                const input = document.getElementById("username");
+                const errorMessage = document.getElementById("error-message");
+                const maxLength = 10;
+    
+                if (input.value.length > maxLength) {
+                    errorMessage.textContent = `ورودی نمی‌تواند بیشتر از ${maxLength} کاراکتر باشد.`;
+                } else if (input.value.trim() === "") {
+                    errorMessage.textContent = "ورودی نمی‌تواند خالی باشد.";
+                } else {
+                    errorMessage.textContent = "";
+                    alert("ثبت‌نام با موفقیت انجام شد!");
+                    // در اینجا می‌توانید فرم را ارسال کنید
+                }
+            }
+        </script>
+ 
+     </section>
+     </main>
+     
+       <script type="text/javascript">
+               window.alert("به فروشگاه ابزار الات خوش امدید");
+       </script>
+     
+</body>
+</html>
